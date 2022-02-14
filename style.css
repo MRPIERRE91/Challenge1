@@ -1,0 +1,236 @@
+/* Root and body styling */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Navbar styling*/
+nav {
+        position: relative;
+        margin: 20px 0;
+  text-align: center;  
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 5px 10px 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+  list-style-type: none;    
+}
+
+nav a {
+    padding:3px 12px;
+    text-decoration: none;
+    color: rgba(red, green, blue, alpha);
+    line-height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* Hovering over a navbar item will change it to black */
+nav a:hover {
+    color:black
+}
+
+nav .current a {
+    background: darkgrey;
+    color:aliceblue;
+    border-radius: 5px;
+}
+
+/* Main Content start*/
+.main {
+    max-width: 100px;
+    margin: auto;
+}
+
+.bio-pic {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    border:black;
+    float:left;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: darkgrey;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(red, green, blue, alpha);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+/* Main content container */
+.container {
+    padding: 20px 40px 40px;
+    max-width: 1000px;
+    border-radius: 5px;
+    background-color: royalblue;
+    padding: 0 100px 100px 100px;
+    padding-bottom: 50px;
+}
+
+div.container{
+    margin-bottom: 30px;
+}
+
+/* Bio picture*/
+.containter__image {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 30px 30px 30px 0;
+    float: left;
+    border: 3px black solid;
+}
+
+/* Main context text/paragrpahs */
+.container__text {
+    display: inline;
+}
+
+/* Start of portfolio gallery*/
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: seashell;
+    padding: 10px;
+}
+
+/* Each portfolio gallery starts off opaque */
+.content img {
+    opacity: 1;
+    border: 2px black solid;;
+}
+
+/* Portfolio gallery images clear when hovered over */
+.content img:hover {
+    opacity: 0.5;
+}
+
+/* Social Connection icons */
+ul.social-connection img {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: snow;
+    width: 75px;
+    height: 75px;
+}
+
+ul.social-connection {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0 50px 0;
+    display: inline-block;
+    text-align: center;
+    width: 1000px;
+}
+
+ul.social-connection li {
+    display: inline-block;
+}
+
+#social-connection li a {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Contact form */
+input [tpye=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    resize: vertical;
+}
+
+/* Blue submit input button */
+input[type=submit] {
+    background-color: blue;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Blue submit button changes to crimson when hovered over - enabled */
+input[type=submit]:hover {
+    background-color: crimson;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(red, green, blue);
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+/* Portfolio gallery media queries */
+/* Makes a two column-layout instead of 1 column */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+ }
+
+    
+}
+    
+}
